@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+
+
+}
+
+.left {
+    width: 25%;
+    height:100%;
+    /* Full height of the viewport */
+    overflow: hidden;
+    /* Hide any overflow content */
+
+
+
+}
+
+  
+    .right {
+       
+        width: 75%;
+        height:100%;
+     
+        position: relative;
+        overflow-y: auto;
+        position: relative;
+        overflow-x: hidden;
+    }
+    
+/* Scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1c1c1c; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners on the thumb */
+    border: 3px solid #1c1c1c; /* Adds some padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555555; /* Changes color when hovering */
+}
+
+
+
+
+
+.home ul li {
+    display: flex;
+    width: 40px;
+    list-style: none;
+
+    gap: 30px;
+    font-size: 27px;
+    padding-top: 20px;
+
+
+}
+
+.heading {
+    display: flex;
+    width: 40px;
+ 
+    list-style: none;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.home {
+    height: 20%;
+    width: auto;
+    border-radius: 20px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.library {
+    height: 78%;
+    position: relative;
+}
+
+.footer {
+     display: flex;
+     
+  
+ 
+    
+    gap: 10px;
+}
+
+.footer a {
+
+    display: flex;
+    height: 3%;
+    flex-wrap: wrap;
+    top: 25px;
+    color: rgb(248, 248, 248);
+     font-size: 15px;
+     font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+}
+.a:hover{
+    color: #ffffff;
+}
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+z-index: 1000;
+
+}
+
+.header>* {
+    padding: 20px;
+}
+
+.header1 {
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* Optional: Add some padding */
+
+}
+
+.header1 h1 {
+    margin: 0;
+    /* Remove any default margin */
+    font-size: 30px;
+    font-weight: 500;
+    /* Adjust font size as needed */
+}
+
+.header1 h1:hover {
+    text-decoration: underline;
+}
+
+.header1 span {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+
+.header1 span:hover {
+    text-decoration: underline;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    /* Aligns SVGs to the left */
+    
+    gap: 20px;
+    /* Adds some space between the icons */
+}
+.hamCon{
+    display: none; 
+    height: 60px;
+    width: 50px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+      
+    
+}
+.X {
+    float: right;
+    position: relative;
+    bottom: 170px;
+    margin-left: 0px;
+    display: none; /* Add this to hide the button initially */
+}
+.nav svg {
+    width: 50px;  /* Same size as hamburger */
+    height: 40px;
+    margin-left: 10px;  /* Add spacing between the SVGs */
+    padding-top: 10px;
+    gap: 40px;
+    fill: rgb(255, 255, 255);
+    /* Changes the color to white */
+}
+
+.button-container {
+    flex-direction: row;
+
+    gap: 50px;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.login {
+    padding: 10px 30px;
+    background-color: #ffffff65;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    align-content: start;
+    justify-content: left;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.signUp {
+
+    background-color: #000200;
+    color: white;
+    width: 80px;
+
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login:hover {
+    background-color: #ffffff;
+    color: #000200;
+    font-weight: 500;
+    /* Darker green on hover */
+}
+
+.spotifyPlaylist {
+    padding: 16px;
+    color: rgba(211, 204, 204, 0.781);
+  
+}
+
+
+.cardContainer {
+   display: flex;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    transition: all .9s;
+    border: radius 20px;
+    position: relative;
+    height: 330px;
+}
+
+.card:hover {
+    border-radius: 20px;
+    background-color: rgb(47, 54, 54);
+}
+
+.card img {
+    width: 220px;
+    text-align: center;
+    object-fit: contain;
+    margin-left: 10px;
+    height: 300px;
+    display: block;
+    position: relative; /* Make the image the reference point for the SVG */
+   
+}
+
+
+.card .svg {
+    position: absolute;
+    right: 15px;
+    bottom: 0px; /* Position the SVG to appear from the right side of the image */
+    transform: translateY(-50%);
+    transition: right 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Hidden initially */
+
+    z-index: 2; /* Ensure the SVG pops up over the image */
+}
+
+.card:hover .svg {
+    right: 8px;
+    bottom: 0; /* Position the SVG to appear from the right side of the image */
+    opacity: 1; /* Make the SVG visible */
+    cursor: pointer;
+    
+}
+
+.playbar{
+    width: 72%;
+    padding: 15px;
+    position: fixed;
+    height: 60px;
+    bottom: 5px;
+   justify-content: center;
+   
+   bottom: 0;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ffffff 0%, #5ee4c2 0%, #cac5c5 0%, #ffcfeb 100%); /* Initial gradient */
+   
+    filter: invert(1);
+
+    z-index: 3;
+}
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    height: 35px;
+}
+.songlist{
+height: 77%;
+background-color: rgb(27, 26, 27);
+overflow: auto;
+margin-bottom: 44px ;
+    
+}
+.songlist ul li {
+list-style-type: decimal;
+    display: flex;
+    gap: 12px;
+    color: #ece4de9d;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 12px 0;
+    border: 1px solid rgb(95, 223, 163);
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
+
+
+ 
+}
+.songlist .info{
+    font-size: 18px;
+    width: 344px;
+}
+.artist{
+    font-size: 15px;
+}
+.playnow{
+ justify-content: center;
+    display: flex;
+    align-items: center;
+  
+}
+.playnow span{
+    width: 64px;
+    padding: 12px;
+ font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.seekbar {
+    position: absolute;
+    bottom: 10px;
+    height: 4px;
+    border-radius: 10px;
+    width: 97%;
+    border: 2px solid rgb(41, 5, 5);
+    background: linear-gradient(to right, #05e5f5 0%, #05e5f5 0%, #ccc 0%, #ccc 100%); /* Initial gradient */
+}
+
+.progress {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #000000; /* Color that will fill the progress */
+    border-radius: 10px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 13px;
+    background-color: #011314;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+    cursor: pointer;
+}
+
+.songinfo, .songtime{
+    color: #000000;
+   padding: 0 18px;
+    font-size: 20px;
+}
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.range input{
+    cursor: pointer;
+}
+.volume{
+    display: flex;
+    align-items: center;
+    gap: 22px ;
+    
+    justify-content: center;
+}
+
+.timevol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+@media (max-width: 1400px){
+    .left{
+        background-color: rgb(8, 0, 2);
+        position: absolute;
+        left: -100%;
+        transition: all.3s;
+        z-index: 10;
+        width: 373px;
+    }
+    .left .close{
+        display: flex;
+        position: absolute;
+        right: 31px;
+        top: 25px;
+        width: 29px;
+    }
+    .right{
+        height: auto;
+        width: 100%;
+    
+    }
+    .spotifyPlaylist 
+    {
+        height: auto;
+        width: 100%;
+      
+    }
+    .header1 span{
+        display: flex;
+        padding-right: 20px;
+    
+    
+    }
+   
+   
+    .playbar{
+        width:98%;
+     left: 0;
+   
+        height: 15%;
+        z-index: 3;
+    }
+    .seekbar{
+        width:94%;
+    }
+  
+    .hamCon {
+        display: flex; /* Show when screen size is 1400px or less */
+    }
+    .abovebar{
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
+    }
+    
+    
+.cardContainer {
+    display: flex;
+     gap: 10px;
+    height: auto;
+    
+ }
+ 
+ .card {
+    background-color: #ffffff00;
+     color: white;
+     padding: 20px;
+     text-align: center;
+     flex-wrap: wrap;
+     font-size: 20px;
+     border-radius: 20px;
+     position: relative;
+     height: 310px;
+   
+ }
+ 
+ .card:hover {
+     border-radius: 20px;
+     background-color: #000000;
+ }
+ 
+ .card img {
+     width: 220px;
+     text-align: center;
+     object-fit: contain;
+     margin-left: 10px;
+     
+     display: block;
+     position: relative; /* Make the image the reference point for the SVG */
+    
+ }
+ 
+ .card h2,
+ .card h3 {
+     padding-top: 10px;
+ 
+ }
+ 
+ .card.svg {
+     position: absolute;
+     right: 15px;
+     bottom: 0px; /* Position the SVG to appear from the right side of the image */
+     transform: translateY(-50%);
+     transition: right 0.3s ease, opacity 0.3s ease;
+     opacity: 0; /* Hidden initially */
+ 
+     z-index: 2; /* Ensure the SVG pops up over the image */
+ }
+ 
+ .card:hover .svg {
+     right: 8px;
+     bottom: 0; /* Position the SVG to appear from the right side of the image */
+     opacity: 1; /* Make the SVG visible */
+     cursor: pointer;
+     
+ }
+
+}
+@media (max-width: 881px){
+    .cardContainer{
+        background-color: #ffffff00;
+    }
+    
+    .card img{
+        width: 240px;
+        text-align: center;
+        object-fit: contain;
+        margin-left: 10px;
+        height: 310px;
+        display: block;
+        position: relative;
+        margin-left: 50px;
+        
+
+}
+
+}
+
+@media (max-width: 724px){
+    .cardContainer{
+        background-color: #ffffff00;
+  
+    }
+    .card{
+        margin-left: 0px;
+ 
+    }
+    .card img{
+        width: 220px;
+        text-align: center;
+        object-fit: contain;
+        margin-left: 10px;
+        height: 320px;
+        display: block;
+        position: relative
+
+}
+}
+
+@media (max-width: 600px){
+    .cardContainer{
+        display: flex;
+      justify-content: center;
+
+  
+    }
+    .card{
+        margin-left: 0px;
+      
+        height: 450px;
+        width: 400px;
+ 
+    }
+    .card h2, .card h3 {
+      padding: 0;
+}
+.card img{
+    width: 400px;
+    text-align: center;
+    object-fit: contain;
+    margin-left: 10px;
+    height: 450px;
+
+    position: relative
+
+}
+
+}
+@media (max-width: 510px){
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(0, 0, 0);
+    }
+    
+.button-container {
+    flex-direction: column;
+
+    gap: 10px;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.login {
+    padding: 10px 30px;
+    background-color: #ffffff65;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    align-content: start;
+    justify-content: left;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+}
+
+
+
+
